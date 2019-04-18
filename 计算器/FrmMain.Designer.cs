@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.BtnLeft = new System.Windows.Forms.Button();
             this.BtnRig = new System.Windows.Forms.Button();
@@ -61,6 +62,10 @@
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.历史记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.历史记录ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.更改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.检查更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转账ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.软件信息.SuspendLayout();
@@ -83,64 +88,81 @@
             // 
             // BtnLeft
             // 
+            this.BtnLeft.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLeft.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnLeft.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnLeft.Location = new System.Drawing.Point(4, 183);
             this.BtnLeft.Name = "BtnLeft";
             this.BtnLeft.Size = new System.Drawing.Size(95, 49);
             this.BtnLeft.TabIndex = 1;
             this.BtnLeft.Text = "（";
-            this.BtnLeft.UseVisualStyleBackColor = true;
+            this.BtnLeft.UseVisualStyleBackColor = false;
             this.BtnLeft.Click += new System.EventHandler(this.BtnLeft_Click);
             // 
             // BtnRig
             // 
             this.BtnRig.AutoSize = true;
+            this.BtnRig.BackColor = System.Drawing.Color.Transparent;
+            this.BtnRig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRig.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnRig.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnRig.Location = new System.Drawing.Point(102, 183);
             this.BtnRig.Name = "BtnRig";
             this.BtnRig.Size = new System.Drawing.Size(93, 49);
             this.BtnRig.TabIndex = 2;
             this.BtnRig.Text = "）";
-            this.BtnRig.UseVisualStyleBackColor = true;
+            this.BtnRig.UseVisualStyleBackColor = false;
             this.BtnRig.Click += new System.EventHandler(this.BtnRig_Click);
             // 
             // BtnC
             // 
+            this.BtnC.BackColor = System.Drawing.Color.Transparent;
+            this.BtnC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnC.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnC.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnC.Location = new System.Drawing.Point(201, 183);
             this.BtnC.Name = "BtnC";
             this.BtnC.Size = new System.Drawing.Size(95, 49);
             this.BtnC.TabIndex = 3;
             this.BtnC.Text = "◀";
-            this.BtnC.UseVisualStyleBackColor = true;
+            this.BtnC.UseVisualStyleBackColor = false;
             this.BtnC.Click += new System.EventHandler(this.BtnC_Click);
             // 
             // BtnCe
             // 
+            this.BtnCe.BackColor = System.Drawing.Color.Transparent;
+            this.BtnCe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCe.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.BtnCe.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnCe.Location = new System.Drawing.Point(300, 183);
             this.BtnCe.Name = "BtnCe";
             this.BtnCe.Size = new System.Drawing.Size(95, 49);
             this.BtnCe.TabIndex = 4;
             this.BtnCe.Text = "C";
-            this.BtnCe.UseVisualStyleBackColor = true;
+            this.BtnCe.UseVisualStyleBackColor = false;
             this.BtnCe.Click += new System.EventHandler(this.BtnCe_Click);
             // 
             // BtnDivi
             // 
+            this.BtnDivi.BackColor = System.Drawing.Color.Transparent;
+            this.BtnDivi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDivi.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.BtnDivi.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnDivi.Location = new System.Drawing.Point(300, 239);
             this.BtnDivi.Name = "BtnDivi";
             this.BtnDivi.Size = new System.Drawing.Size(95, 49);
             this.BtnDivi.TabIndex = 8;
             this.BtnDivi.Text = "/";
-            this.BtnDivi.UseVisualStyleBackColor = true;
+            this.BtnDivi.UseVisualStyleBackColor = false;
             this.BtnDivi.Click += new System.EventHandler(this.BtnDivi_Click);
             // 
             // Btn9
             // 
-            this.Btn9.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn9.BackColor = System.Drawing.Color.Transparent;
+            this.Btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn9.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn9.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn9.Location = new System.Drawing.Point(201, 239);
             this.Btn9.Name = "Btn9";
             this.Btn9.Size = new System.Drawing.Size(95, 49);
@@ -151,8 +173,10 @@
             // 
             // Btn8
             // 
-            this.Btn8.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn8.BackColor = System.Drawing.Color.Transparent;
+            this.Btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn8.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn8.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn8.Location = new System.Drawing.Point(102, 239);
             this.Btn8.Name = "Btn8";
             this.Btn8.Size = new System.Drawing.Size(95, 49);
@@ -163,8 +187,10 @@
             // 
             // Btn7
             // 
-            this.Btn7.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn7.BackColor = System.Drawing.Color.Transparent;
+            this.Btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn7.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Btn7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn7.Location = new System.Drawing.Point(4, 238);
             this.Btn7.Name = "Btn7";
             this.Btn7.Size = new System.Drawing.Size(95, 49);
@@ -175,19 +201,24 @@
             // 
             // BtnMul
             // 
+            this.BtnMul.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMul.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.BtnMul.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnMul.Location = new System.Drawing.Point(300, 293);
             this.BtnMul.Name = "BtnMul";
             this.BtnMul.Size = new System.Drawing.Size(95, 49);
             this.BtnMul.TabIndex = 12;
             this.BtnMul.Text = "*";
-            this.BtnMul.UseVisualStyleBackColor = true;
+            this.BtnMul.UseVisualStyleBackColor = false;
             this.BtnMul.Click += new System.EventHandler(this.BtnMul_Click);
             // 
             // Btn6
             // 
-            this.Btn6.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn6.BackColor = System.Drawing.Color.Transparent;
+            this.Btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn6.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn6.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn6.Location = new System.Drawing.Point(201, 293);
             this.Btn6.Name = "Btn6";
             this.Btn6.Size = new System.Drawing.Size(95, 49);
@@ -198,8 +229,10 @@
             // 
             // Btn5
             // 
-            this.Btn5.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn5.BackColor = System.Drawing.Color.Transparent;
+            this.Btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn5.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn5.Location = new System.Drawing.Point(102, 293);
             this.Btn5.Name = "Btn5";
             this.Btn5.Size = new System.Drawing.Size(95, 49);
@@ -210,8 +243,10 @@
             // 
             // Btn4
             // 
-            this.Btn4.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn4.BackColor = System.Drawing.Color.Transparent;
+            this.Btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn4.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn4.Location = new System.Drawing.Point(3, 293);
             this.Btn4.Name = "Btn4";
             this.Btn4.Size = new System.Drawing.Size(95, 49);
@@ -222,19 +257,24 @@
             // 
             // BtnSubt
             // 
+            this.BtnSubt.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSubt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSubt.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.BtnSubt.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnSubt.Location = new System.Drawing.Point(300, 347);
             this.BtnSubt.Name = "BtnSubt";
             this.BtnSubt.Size = new System.Drawing.Size(95, 49);
             this.BtnSubt.TabIndex = 16;
             this.BtnSubt.Text = "-";
-            this.BtnSubt.UseVisualStyleBackColor = true;
+            this.BtnSubt.UseVisualStyleBackColor = false;
             this.BtnSubt.Click += new System.EventHandler(this.BtnSubt_Click);
             // 
             // Btn3
             // 
-            this.Btn3.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn3.BackColor = System.Drawing.Color.Transparent;
+            this.Btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn3.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn3.Location = new System.Drawing.Point(201, 347);
             this.Btn3.Name = "Btn3";
             this.Btn3.Size = new System.Drawing.Size(95, 49);
@@ -245,8 +285,10 @@
             // 
             // Btn2
             // 
-            this.Btn2.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn2.BackColor = System.Drawing.Color.Transparent;
+            this.Btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn2.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn2.Location = new System.Drawing.Point(102, 347);
             this.Btn2.Name = "Btn2";
             this.Btn2.Size = new System.Drawing.Size(95, 49);
@@ -257,8 +299,10 @@
             // 
             // Btn1
             // 
-            this.Btn1.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn1.BackColor = System.Drawing.Color.Transparent;
+            this.Btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn1.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn1.Location = new System.Drawing.Point(3, 347);
             this.Btn1.Name = "Btn1";
             this.Btn1.Size = new System.Drawing.Size(95, 49);
@@ -269,42 +313,53 @@
             // 
             // BtnAdd
             // 
+            this.BtnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAdd.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.BtnAdd.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnAdd.Location = new System.Drawing.Point(300, 402);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(95, 49);
             this.BtnAdd.TabIndex = 20;
             this.BtnAdd.Text = "+";
-            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.UseVisualStyleBackColor = false;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnEqual
             // 
+            this.BtnEqual.BackColor = System.Drawing.Color.Transparent;
+            this.BtnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEqual.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.BtnEqual.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnEqual.Location = new System.Drawing.Point(201, 402);
             this.BtnEqual.Name = "BtnEqual";
             this.BtnEqual.Size = new System.Drawing.Size(95, 49);
             this.BtnEqual.TabIndex = 19;
             this.BtnEqual.Text = "=";
-            this.BtnEqual.UseVisualStyleBackColor = true;
+            this.BtnEqual.UseVisualStyleBackColor = false;
             this.BtnEqual.Click += new System.EventHandler(this.BtnEqual_Click);
             // 
             // BtnDot
             // 
+            this.BtnDot.BackColor = System.Drawing.Color.Transparent;
+            this.BtnDot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDot.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.BtnDot.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnDot.Location = new System.Drawing.Point(102, 402);
             this.BtnDot.Name = "BtnDot";
             this.BtnDot.Size = new System.Drawing.Size(95, 49);
             this.BtnDot.TabIndex = 18;
             this.BtnDot.Text = ".";
             this.BtnDot.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnDot.UseVisualStyleBackColor = true;
+            this.BtnDot.UseVisualStyleBackColor = false;
             this.BtnDot.Click += new System.EventHandler(this.BtnDot_Click);
             // 
             // Btn0
             // 
-            this.Btn0.BackColor = System.Drawing.SystemColors.Info;
+            this.Btn0.BackColor = System.Drawing.Color.Transparent;
+            this.Btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn0.Font = new System.Drawing.Font("宋体", 21.75F);
+            this.Btn0.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Btn0.Location = new System.Drawing.Point(4, 402);
             this.Btn0.Name = "Btn0";
             this.Btn0.Size = new System.Drawing.Size(95, 49);
@@ -315,9 +370,11 @@
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.textBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox2.Font = new System.Drawing.Font("宋体", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox2.Location = new System.Drawing.Point(3, 98);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -329,6 +386,7 @@
             // 
             // 软件信息
             // 
+            this.软件信息.BackColor = System.Drawing.Color.Transparent;
             this.软件信息.Dock = System.Windows.Forms.DockStyle.None;
             this.软件信息.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.选项ToolStripMenuItem,
@@ -345,27 +403,34 @@
             this.科学ToolStripMenuItem,
             this.程序员ToolStripMenuItem,
             this.androidToolStripMenuItem});
+            this.选项ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.选项ToolStripMenuItem.Name = "选项ToolStripMenuItem";
             this.选项ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.选项ToolStripMenuItem.Text = "选项";
+            this.选项ToolStripMenuItem.Click += new System.EventHandler(this.选项ToolStripMenuItem_Click);
             // 
             // 科学ToolStripMenuItem
             // 
+            this.科学ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.科学ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.科学ToolStripMenuItem.Name = "科学ToolStripMenuItem";
-            this.科学ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.科学ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.科学ToolStripMenuItem.Text = "‭IOS";
-            this.科学ToolStripMenuItem.Click += new System.EventHandler(this.科学ToolStripMenuItem_Click_1);
             // 
             // 程序员ToolStripMenuItem
             // 
+            this.程序员ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.程序员ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.程序员ToolStripMenuItem.Name = "程序员ToolStripMenuItem";
-            this.程序员ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.程序员ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.程序员ToolStripMenuItem.Text = "Linux";
             // 
             // androidToolStripMenuItem
             // 
+            this.androidToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.androidToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.androidToolStripMenuItem.Name = "androidToolStripMenuItem";
-            this.androidToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.androidToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.androidToolStripMenuItem.Text = "Android";
             // 
             // 关于ToolStripMenuItem
@@ -374,51 +439,94 @@
             this.版本信息ToolStripMenuItem,
             this.作者信息ToolStripMenuItem,
             this.帮助ToolStripMenuItem});
+            this.关于ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
             this.关于ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.关于ToolStripMenuItem.Text = "关于";
             // 
             // 版本信息ToolStripMenuItem
             // 
+            this.版本信息ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.版本信息ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.版本信息ToolStripMenuItem.Name = "版本信息ToolStripMenuItem";
-            this.版本信息ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.版本信息ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.版本信息ToolStripMenuItem.Text = "版本信息";
             this.版本信息ToolStripMenuItem.Click += new System.EventHandler(this.版本信息ToolStripMenuItem_Click);
             // 
             // 作者信息ToolStripMenuItem
             // 
+            this.作者信息ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.作者信息ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.作者信息ToolStripMenuItem.Name = "作者信息ToolStripMenuItem";
-            this.作者信息ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.作者信息ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.作者信息ToolStripMenuItem.Text = "团队信息";
+            this.作者信息ToolStripMenuItem.Click += new System.EventHandler(this.作者信息ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
+            this.帮助ToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.帮助ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // menuStrip1
             // 
             this.menuStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.历史记录ToolStripMenuItem,
             this.转账ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(274, 4);
+            this.menuStrip1.Location = new System.Drawing.Point(154, 4);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(120, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(240, 25);
             this.menuStrip1.TabIndex = 23;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 历史记录ToolStripMenuItem
             // 
+            this.历史记录ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.历史记录ToolStripMenuItem1,
+            this.更改密码ToolStripMenuItem,
+            this.检查更新ToolStripMenuItem,
+            this.退出ToolStripMenuItem});
+            this.历史记录ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.历史记录ToolStripMenuItem.Name = "历史记录ToolStripMenuItem";
             this.历史记录ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.历史记录ToolStripMenuItem.Text = "历史记录";
-            this.历史记录ToolStripMenuItem.Click += new System.EventHandler(this.历史记录ToolStripMenuItem_Click);
+            this.历史记录ToolStripMenuItem.Text = "个人中心";
+            // 
+            // 历史记录ToolStripMenuItem1
+            // 
+            this.历史记录ToolStripMenuItem1.Name = "历史记录ToolStripMenuItem1";
+            this.历史记录ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.历史记录ToolStripMenuItem1.Text = "历史记录";
+            this.历史记录ToolStripMenuItem1.Click += new System.EventHandler(this.历史记录ToolStripMenuItem1_Click);
+            // 
+            // 更改密码ToolStripMenuItem
+            // 
+            this.更改密码ToolStripMenuItem.Name = "更改密码ToolStripMenuItem";
+            this.更改密码ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.更改密码ToolStripMenuItem.Text = "更改密码";
+            this.更改密码ToolStripMenuItem.Click += new System.EventHandler(this.更改密码ToolStripMenuItem_Click);
+            // 
+            // 检查更新ToolStripMenuItem
+            // 
+            this.检查更新ToolStripMenuItem.Name = "检查更新ToolStripMenuItem";
+            this.检查更新ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.检查更新ToolStripMenuItem.Text = "检查更新";
+            this.检查更新ToolStripMenuItem.Click += new System.EventHandler(this.检查更新ToolStripMenuItem_Click);
+            // 
+            // 退出ToolStripMenuItem
+            // 
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
             // 转账ToolStripMenuItem
             // 
+            this.转账ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.转账ToolStripMenuItem.Name = "转账ToolStripMenuItem";
             this.转账ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.转账ToolStripMenuItem.Text = "转账";
@@ -426,21 +534,25 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(4, 453);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(390, 25);
             this.button1.TabIndex = 24;
             this.button1.Text = "按住说话";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(399, 480);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(400, 480);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.BtnAdd);
@@ -466,11 +578,13 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.软件信息);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.软件信息;
             this.MaximizeBox = false;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "计算器";
+            this.Text = "996超级计算器";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.软件信息.ResumeLayout(false);
             this.软件信息.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -517,6 +631,10 @@
         private System.Windows.Forms.ToolStripMenuItem 历史记录ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 转账ToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem 历史记录ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 更改密码ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 检查更新ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
     }
 }
 

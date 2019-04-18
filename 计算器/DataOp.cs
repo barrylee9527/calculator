@@ -139,8 +139,14 @@ namespace 计算器
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.ClientSize = new System.Drawing.Size(580, 454);
             this.Name = "DataOp";
+            this.Load += new System.EventHandler(this.DataOp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
+        }
+
+        private void DataOp_Load(object sender, EventArgs e)
+        {
 
         }
     }

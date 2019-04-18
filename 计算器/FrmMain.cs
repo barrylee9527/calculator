@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace 计算器
 {
@@ -102,8 +103,13 @@ namespace 计算器
             //等号代码
             textBox1.AppendText("=");
             textBox2.Text = textBox1.Text;
+            
             textBox1.Text = DataOp.DataMain();
-
+            Calculatehistory calculatehistory = new Calculatehistory();
+            User users = new User();
+            calculatehistory.username = users.get_user();
+            string histor = textBox2.Text + textBox1.Text;
+            calculatehistory.calculate_history(histor);
             string temp= DataOp.DataMain();
             inputStr.Clear();
             for(int i = 0; i < temp.Length; i++)
@@ -166,21 +172,6 @@ namespace 计算器
 
         }
 
-        private void 程序员ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void 科学ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void 科学ToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void 版本信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Version version = new Version();
@@ -193,10 +184,63 @@ namespace 计算器
             transfer.ShowDialog();
         }
 
-        private void 历史记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 历史记录ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            
+            
             History history = new History();
+
+            
+            
             history.ShowDialog();
+            
+            
+
+        }
+
+        private void 更改密码ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changesecret changesecret = new Changesecret();
+            changesecret.ShowDialog();
+            
+            Closedd close = new Closedd();
+            if (close.closed())
+            {
+                this.Dispose();
+                登录界面 log = new 登录界面();
+                log.ShowDialog();
+            }
+            
+
+
+        }
+
+        private void 作者信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Teaminfo teaminfo = new Teaminfo();
+            teaminfo.ShowDialog();
+        }
+
+        private void 检查更新ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("暂无新版本发布，尽情期待","提示",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+        }
+
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            登录界面 log = new 登录界面();
+            log.ShowDialog();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 选项ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

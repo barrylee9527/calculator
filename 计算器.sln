@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "计算器", "计算器\计算器.csproj", "{50E7686C-03AF-4037-A26E-A1C23E3A5150}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "996超级计算器", "计算器\996超级计算器.csproj", "{50E7686C-03AF-4037-A26E-A1C23E3A5150}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
