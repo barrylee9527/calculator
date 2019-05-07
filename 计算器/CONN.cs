@@ -11,7 +11,7 @@ namespace 计算器
     {
         public static MySqlConnection Myconn()
         {
-            return new MySqlConnection("server=127.0.0.1;port=3306;user=root;password=1234; database=root;");
+            return new MySqlConnection("server=127.0.0.1;port=3306;user=database_userId;password=database_password; database=root;");
         }
     }
 }
